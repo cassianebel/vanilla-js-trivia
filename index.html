@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Trivia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <img src="IMG_7457.png" alt="Vanilla ice cream cone" class="vanilla" />
+    <div class="container">
+      <h1>Vanilla Trivia</h1>
+      <div class="difficulty">
+        <legend>Select your difficulty:</legend>
+        <div class="levels">
+          <div>
+            <input type="radio" name="difficulty" value="easy" id="easy" />
+            <label for="easy">Easy</label>
+          </div>
+          <div>
+            <input type="radio" name="difficulty" value="medium" id="medium" />
+            <label for="medium">Medium</label>
+          </div>
+          <div>
+            <input type="radio" name="difficulty" value="hard" id="hard" />
+            <label for="hard">Hard</label>
+          </div>
+        </div>
+        <button id="start">Start</button>
+      </div>
+
+      <div class="question"></div>
+      <div class="result"></div>
+      <button id="next">Next</button>
+    </div>
+  </body>
+</html>
